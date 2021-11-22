@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<script>
+    let variavelA = 3 
+    let variavelB = 4
+
+    document.write("Valor da variável A " + variavelA + "<br>")
+    document.write("Valor da variável B " + variavelB + "<br><br>")
+
+    let aux = 0 
+
+    aux = variavelA
+    variavelA = variavelB
+    variavelB = aux
+
+    document.write("Valor da variável A" + variavelA + "<br>")
+    document.write("Valor da variável B" + variavelB + "<br>")
+
+</script> 
+
+<!-- <script>
+
+    let repeticoes = parseInt(prompt('Digite a quantidade de loop que deseja'))
+    let numeroMaior = 0
+
+    for (let i=0; i<repeticoes; i++){
+        let numero = parseInt(prompt('Digite o número que deseja: '))
+        if (numero > 0){
+            if(numero>numeroMaior){ 
+            numeroMaior = numero  
+            } 
+        }
+    }
+    document.write("O maior número digitado foi: "+numeroMaior)
+ 
+</script> -->
