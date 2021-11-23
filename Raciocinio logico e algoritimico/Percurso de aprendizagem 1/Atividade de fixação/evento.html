@@ -1,8 +1,8 @@
 <meta charset="UTF-8">
 
 <script>
-    let horaInicial = 13.00
-    let horafinal = 17.30
+    let horaInicial = parseFloat(prompt("Digite a hora inicial: "))
+    let horafinal = parseFloat(prompt("Digite o horário final: "))
     let duracao = (horafinal*60)-(horaInicial*60)
 
     document.write("Cronograma do evento","<br>","<br>","<br>" )

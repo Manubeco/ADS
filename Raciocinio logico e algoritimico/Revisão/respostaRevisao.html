@@ -1,0 +1,109 @@
+
+<script>
+
+function primeiraQuestao(vetor) {
+
+  let quantRemovidos = 0
+  let quantVetor = 0
+
+  for(let i = 0; i<= vetor.length-1; i++) {
+    for(let j = i+1; j<= vetor.length-1; j++) {
+      let elemento = vetor[i]
+
+      if(elemento == vetor[j]) {
+        vetor.splice(j, 1)
+        quantRemovidos = quantRemovidos + 1
+      }
+    }
+  }
+  quantVetor = vetor.length
+  document.write(quantRemovidos + "<br>")
+  document.write(quantVetor)
+}
+
+function segundaQuestao(vetor){
+  let elemento = 0
+
+  for(let i = 0; i < vetor.length; i++){
+    let verificaDuplicado = 0
+    for(let j = 0; j < vetor.length; j++){
+
+      if(vetor[i] == vetor[j] && i != j){
+        verificaDuplicado = verificaDuplicado + 1
+      }
+
+    }
+    if(verificaDuplicado < 1){
+      elemento = vetor[i]
+    }
+  }
+  document.write(elemento)
+}
+
+function terceiraQuestao() {
+  // Terceira questão
+  // Setup da questão
+  numero =  5
+  atual = 1
+  elemento = 1
+
+  // Passo 1
+  elemento = 1 * 1
+  elemento = 1
+  atual = 2
+
+  // Passo 2
+  elemento = 1 * 2
+  elemento = 2
+  atual = 3
+
+  // Passo 3
+  elemento = 2 * 3
+  elemento = 6
+  atual = 4
+
+  // Passo 4
+  elemento = 6 * 4
+  elemento = 24
+  atual = 5
+
+  // Passo 5
+  elemento = 24 * 5
+  elemento = 120
+  atual = 6
+
+  // Passo 6
+  120
+
+
+  5 * 4 * 3 * 2 * 1
+}
+
+function quartaQuestao () {
+  let quantFilhos = parseInt(prompt("Digite a quantidade de filhos"))
+  
+  let resultadoFatorial = 1 
+
+  for(let i = 1; i <= quantFilhos; i++) {
+    resultadoFatorial = resultadoFatorial * i
+    // alert(resultadoFatorial)
+    // document.write(resultadoFatorial+"<br>")
+  }
+  
+  resultadoFatorial = resultadoFatorial * 2
+
+  document.write(resultadoFatorial)
+}
+
+
+// Tire os comentarios para executar a Primeira questão
+// let vetor = [3, 1, 3, 2, 6, 6, 7]
+// primeiraQuestao(vetor)
+
+// Tire os comentarios para executar a Segunda questão
+// let vetor = [4,1,2,1,2]
+// segundaQuestao(vetor)
+
+// Tire os comentarios para executar a Quarta questão
+// quartaQuestao()
+</script>
