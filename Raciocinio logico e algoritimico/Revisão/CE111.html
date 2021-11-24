@@ -1,0 +1,40 @@
+<meta charset="utf-8">
+
+<script>
+  
+var numeroMaior = 0
+var numeroMedio = 0
+var numeroMenor = 0
+
+for (var i=0; i<3 ; i++){
+  var numero = parseInt(prompt('Numero: '))
+
+  if (numero >0){
+    if(numero > numeroMaior){
+      numeroMenor = numeroMedio
+      numeroMedio = numeroMaior
+      numeroMaior = numero
+    }
+     if (numero < numeroMaior && numero > numeroMedio){
+       numeroMenor=numeroMedio
+       numeroMedio=numero
+     }
+     if (numero<numeroMedio){
+       numeroMenor=numero
+     }
+  }
+}
+document.write("em ordem decrescente: " + numeroMaior + numeroMedio +numeroMenor + "<br>" )
+document.write("em ordem crescente: " + numeroMenor + numeroMedio +numeroMaior )
+
+
+
+
+   
+  
+  
+  
+  
+  
+  
+</script>
