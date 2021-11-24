@@ -5,27 +5,50 @@
     let termo1 = parseInt(prompt("Digite o primeiro valor: "))
     let termo2 = parseInt(prompt("Digite o segundo valor: "))  
     let termo3 = parseInt(prompt("Digite o terceiro valor: "))
-    let maior = 0
-    let medio = 0
-    let menor = 0
     let aux = 0
         
     if (termo1 > termo2){ 
         aux = termo1
-        medio = termo2
-        maior = aux
-    
-    if (termo1 < termo3){
+        termo1 = termo2
+        termo2 = aux
+        }
+        if (termo1 > termo3){
         aux = termo1
-        menor = termo3
-        maior = aux
-    }
-    if (termo2 > termo3){
+        termo1 = termo3
+        termo3 = aux
+        }
+        if (termo2 > termo3){
         aux = termo2
-        menor = termo3
-        menor = aux
-    }}
-    document.write("O maior valor é: "+termo1+"<br>")
+        termo2 = termo3
+       termo3 = aux
+        }
+    document.write("O maior valor é: "+termo3+"<br>")
     document.write("O valor médio é: "+termo2+"<br>")
-    document.write("O menor valor é: "+termo3+"<br>")
+    document.write("O menor valor é: "+termo1+"<br>")
 </script>
+
+<!-- <script>
+    let numero1 = parseInt(prompt("Digite o primeiro número"))
+    let numero2 = parseInt(prompt("Digite o segundo número"))
+    let numero3 = parseInt(prompt("Digite o terceiro número"))
+
+    let aux = numero1
+
+    if(numero2 > numero1){
+        aux=numero2;
+        numero2=numero1;
+        numero1=aux;
+    }
+    if(numero3 > numero1){
+        aux=numero3;
+        numero3=numero1;
+        numero1=aux;
+    }
+    if(numero3 > numero2){
+        aux=numero3;
+        numero3=numero2;
+        numero2=aux;
+    }
+    document.write(numero1 + " - " +numero2 + " - " +numero3 + "<br>")
+    document.write(numero3 + " - " +numero2 + " - " +numero1)
+</script> -->

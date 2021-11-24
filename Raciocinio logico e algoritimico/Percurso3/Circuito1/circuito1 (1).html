@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 
-<script>
+<!-- <script>
     let variavelA = 3 
     let variavelB = 4
 
@@ -16,7 +16,7 @@
     document.write("Valor da variável A" + variavelA + "<br>")
     document.write("Valor da variável B" + variavelB + "<br>")
 
-</script> 
+</script> -->
 
 <!-- <script>
 
@@ -34,3 +34,16 @@
     document.write("O maior número digitado foi: "+numeroMaior)
  
 </script> -->
+
+<script>
+    let n = parseInt(prompt("Digite a quantidade de professores: "));
+    let minimo = Number.POSITIVE_INFINITY
+
+    for (let i = 1; i <= n; i++){
+        let idades = parseInt(prompt("Digite a idade dos professores: "))
+        if (idades < minimo)
+            minimo = idades;
+    }
+        document.write("A menor idade é: " + minimo)
+
+</script>
